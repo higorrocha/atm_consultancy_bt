@@ -1,3 +1,7 @@
+import 'package:atm_consultancy_bt/ScreenCompany.dart';
+import 'package:atm_consultancy_bt/ScreenContact.dart';
+import 'package:atm_consultancy_bt/ScreenCustomer.dart';
+import 'package:atm_consultancy_bt/ScreenService.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,19 +15,31 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
 
   void _openCompany() {
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context)=> ScreenCompany())
+    );
   }
 
   void _openServices() {
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ScreenService())
+    );
   }
 
   void _openCustomers(){
-
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => ScreenCustomer())
+    );
   }
 
   void _openContact(){
-
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => ScreenContact())
+    );
   }
 
   @override
